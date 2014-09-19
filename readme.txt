@@ -1,7 +1,7 @@
 === Priority Shortcodes ===
 Contributors: swinggraphics
 Tags: shortcodes, tinymce
-Requires at least: 2.7.0
+Requires at least: 2.5.0
 Tested up to: 4.0
 Stable tag: trunk
 License: GPLv2 or later
