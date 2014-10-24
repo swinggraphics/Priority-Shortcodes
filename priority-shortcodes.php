@@ -2,7 +2,7 @@
 /**
 * Plugin Name: Priority Shortcodes
 * Description: Processes specific shortcodes before wpautop and do_shortcode.
-* Version: 1.0
+* Version: 2.0
 * Plugin URI: https://github.com/swinggraphics/Priority-Shortcodes
 * Author: Greg Perham
 * Author URI: http://www.swinggraphics.com/
@@ -11,23 +11,23 @@
 * The code below is copied from do_shortcode() and do_shortcode_tag() in https://core.trac.wordpress.org/browser/tags/4.0/src/wp-includes/shortcodes.php#L0
 * 
 * Credit is due to the awesome people who authored the shortcodes API!
-* My only unique contribution is line 29. :)
+* My only unique contribution is line 30. :)
 * 
 */
 
-// Run our own [[shortcode]] before wpautop and do_shortcode
+// Run our own [!shortcode] before wpautop and do_shortcode
 
 function sg_priority_shortcode( $content ) {
   global $shortcode_tags;
 
-  if ( false === strpos( $content, '[[' ) )
+  if ( false === strpos( $content, '[!' ) )
     return $content;
 
-  if (empty($shortcode_tags) || !is_array($shortcode_tags))
+  if ( empty($shortcode_tags) || !is_array($shortcode_tags) )
     return $content;
 
-  // look for double brackets only
-  $pattern = '(\\[\\[)' . substr( get_shortcode_regex(), 7, -5 ) . '(\\])';
+  // look for [! only
+  $pattern = '(\\[!)' . substr( get_shortcode_regex(), 7, -5 );
 
   return preg_replace_callback( "/$pattern/s",
     function( $m ) {
@@ -48,3 +48,4 @@ function sg_priority_shortcode( $content ) {
   );
 }
 add_filter( 'the_content', 'sg_priority_shortcode', 9 );
+add_filter( 'widget_text', 'sg_priority_shortcode', 7 );
