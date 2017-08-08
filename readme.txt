@@ -2,7 +2,7 @@
 Contributors: swinggraphics
 Tags: shortcodes, tinymce
 Requires at least: 2.5.0
-Tested up to: 4.0
+Tested up to: 4.8.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/lgpl-2.1.html
@@ -50,6 +50,9 @@ See the standard installation instructions at [WordPress.org](http://codex.wordp
 I expect developers will copy the code directly into their functions.php files, possibly customizing the string to specify the priority shortcodes.
 
 == Changelog ==
+
+= 2.0.1 =
+* Bumped "Tested up to" version
 
 = 2.0 =
 * Changed to more simple `[!` syntax

@@ -2,7 +2,7 @@
 /**
 * Plugin Name: Priority Shortcodes
 * Description: Processes specific shortcodes before wpautop and do_shortcode.
-* Version: 2.0
+* Version: 2.0.1
 * Plugin URI: https://github.com/swinggraphics/Priority-Shortcodes
 * Author: Greg Perham
 * Author URI: http://www.swinggraphics.com/

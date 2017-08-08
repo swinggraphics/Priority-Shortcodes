@@ -5,7 +5,7 @@
   
 **Requires at least:** 2.5.0
   
-**Tested up to:** 4.0
+**Tested up to:** 4.8.1
   
 **Stable tag:** trunk
   
@@ -61,7 +61,10 @@ I expect developers will copy the code directly into their functions.php files, 
 
 ## Changelog ##
 
-## 2.0 ##
+### 2.0.1 ##
+* Bumped "Tested up to" version
+
+### 2.0 ###
 * Changed to more simple `[!` syntax
 * Added compatibility with text widgets
 
@@ -70,7 +73,7 @@ I expect developers will copy the code directly into their functions.php files, 
 
 ## Upgrade Notice ##
 
-## 2.0 ##
+### 2.0 ###
 * This update changes the syntax for specifying your priority shortcodes!! You now use `[!` and the start and a single `]` at the end of your shortcodes.
 * Priority shortcodes can now be used in text widgets
 
