@@ -1,9 +1,9 @@
 === Priority Shortcodes ===
 Contributors: swinggraphics
-Tags: shortcodes, tinymce
+Tags: classic editor, shortcodes, tinymce
 Requires at least: 2.5.0
-Tested up to: 4.8.1
-Stable tag: trunk
+Tested up to: 5.6
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/lgpl-2.1.html
 
@@ -24,6 +24,10 @@ But sometimes shortcodes stand on their own on a line, wanting desperately to be
 = Usage =
 
 Where you want to process a shortcode with priority, use "[!" at the start. For example: `[my-shortcode]` becomes `[!my-shortcode]` and `[my-shortcode]Some content.[/my-shortcode]` becomes `[!my-shortcode]Some content.[/my-shortcode]`.
+
+= Gutenberg =
+
+Users of the new WordPress editor, "Gutenberg", will probably not use Priority Shortcodes within the new editor, but the plugin continues to work in the Classic Editor.
 
 == Frequently Asked Questions ==
 
@@ -50,6 +54,10 @@ See the standard installation instructions at [WordPress.org](http://codex.wordp
 I expect developers will copy the code directly into their functions.php files, possibly customizing the string to specify the priority shortcodes.
 
 == Changelog ==
+
+= 2.0.2 =
+* Tested with WP 5.6
+* Updated README with note about Gutenberg
 
 = 2.0.1 =
 * Bumped "Tested up to" version
