@@ -2,8 +2,8 @@
 Contributors: swinggraphics
 Tags: classic editor, shortcodes, tinymce
 Requires at least: 2.5.0
-Tested up to: 5.6
-Stable tag: 2.0.2
+Tested up to: 5.7
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/lgpl-2.1.html
 

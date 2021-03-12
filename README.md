@@ -5,9 +5,9 @@
 
 **Requires at least:** 2.5.0
 
-**Tested up to:** 5.6
+**Tested up to:** 5.7
 
-**Stable tag:** 2.0.2
+**Stable tag:** trunk
 
 **License:** GPLv2 or later
 
